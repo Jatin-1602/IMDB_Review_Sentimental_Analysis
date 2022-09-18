@@ -13,6 +13,10 @@ Dataset Link : https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-5
 * Python 3
 * Tensorflow
 
+## Algorithm Used
+* Natural Language Processing (NLP)
+* Tokenization (tokenize text into numeric values)
+
 
 ## Additonal Info
 `Trained_Model` directory contains trained model on IMDB dataset with Training Accuracy : 97.93% and Validation Accuracy : 90.88% <br />
