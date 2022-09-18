@@ -114,27 +114,3 @@ plot_graphs(history, "accuracy")
 plot_graphs(history, "loss")
 
 loss, accuracy = model.evaluate(test_padded, test_label)
-
-
-reviews_list=["It's a nice movie",
-              "Worst movie"
-            ]
-
-def predict(review):
-    with open('tokenizer.json') as f:
-        data = json.load(f)
-        tokenizer = tokenizer_from_json(data)
-
-    sequence = tokenizer.texts_to_sequences(review)
-    padded = pad_sequences(sequence,
-                           maxlen=max_len,
-                           padding=padding_type,
-                           truncating=trunc_type)
-    # print(padded)
-    result = model.predict(padded)
-    for value in result:
-        if value < 0.5:
-            print("Negative")
-        print("Positive")
-
-predict(reviews_list)
