@@ -12,8 +12,6 @@ Dataset Link : https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-5
 ## TechStack
 * Python 3
 * Tensorflow
-
-## Algorithm Used
 * Natural Language Processing (NLP)
 * Tokenization (tokenize text into numeric values)
 
